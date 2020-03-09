@@ -1,0 +1,118 @@
+/* Header */
+
+body {
+  background-color: lightgray;
+  padding: 0;
+  margin: 0;
+}
+
+.subtitle {
+  width: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 50px 0 0 0;
+  font-size: 20px;
+}
+
+.heading {
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px 0 0 0;
+  font-size: 60px;
+}
+
+.description {
+  font-family: sans-serif;
+  margin: 30px 25px 0 25px;
+  font-size: 20px;
+}
+
+/* WebGL  */
+
+.webgl-content {
+  width: 100%;
+  height: 160vw;
+  margin: 100px 0 0 0;
+  border: 0;
+  padding: 0;
+}
+
+#unityContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.webgl-content .logo, .progress {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.webgl-content .logo {
+  background: url('progressLogo.Light.png') no-repeat center / contain;
+  width: 154px;
+  height: 130px;
+}
+
+.webgl-content .progress {
+  height: 18px;
+  width: 141px;
+  margin-top: 90px;
+}
+
+.webgl-content .progress .empty {
+  background: url('progressEmpty.Light.png') no-repeat right / cover;
+  float: right;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.webgl-content .progress .full {
+  background: url('progressFull.Light.png') no-repeat left / cover;
+  float: left;
+  width: 0%;
+  height: 100%;
+  display: inline-block;
+}
+
+.webgl-content .logo.Dark {
+  background-image: url('progressLogo.Dark.png');
+}
+
+.webgl-content .progress.Dark .empty {
+  background-image: url('progressEmpty.Dark.png');
+}
+
+.webgl-content .progress.Dark .full {
+  background-image: url('progressFull.Dark.png');
+}
+
+/* Paging Button */
+
+#page_top{
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: Darkgray;
+  opacity: 0.6;
+  margin: 0 20px 20px 0;
+}
+
+#page_top a{
+  position: relative;
+  display: block;
+  top: 10px;
+  width: 150px;
+  height: 150px;
+  text-decoration: none;
+  font-size: 90px;
+  text-align: center;
+  color: white;
+}

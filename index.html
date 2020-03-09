@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>福岡市博物館 | カンナビ</title>
+
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+
+  <script>
+      UnityLoader.SystemInfo.mobile = false;
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json",
+      {
+        onProgress: UnityProgress,
+        Module: {
+          TOTAL_STACK: 6 * 1024 * 1024,
+          cacheControl: {"default": "immutable"}
+        }
+      });
+    </script>
+
+</head>
+
+<body>
+
+  <div class="subtitle">商業施設のコンシェルジュサービス</div>
+  <div class="heading">カンナビ</div>
+  <div class="description">
+    迷いがちな商業施設でお客様を最適なご案内するためのツールです。<br>
+    3Dで構築した仮想館内で道案内 / 検索 / おすすめ など様々なおもてなしが可能です。<br>
+    しかも、アプリ不要でホームページに埋め込むことができるので導入がとても簡単です。<br></div>
+  <div class="subtitle">館内MAP以外の魅力的な使い方</div>
+  <div class="description">
+    ◆お客様の検索ワード解析<br>
+    お客様が検索したデータを解析し（何のワードが？どのお店が？どのような人が？）マーケティングに役立てる事が可能です。<br><br>
+    ◆検索履歴からニーズにあった店鋪提案<br>
+    お客様の検索履歴を元にニーズにあった店鋪を表示します。また必要な人に必要な情報を届けることができます。<br><br>
+    ◆外部のホームページやアプリとの連携<br>
+    既に商業施設様でお持ちのホームページや公式アプリにこの機能を組み込めます。</div>
+
+  <div class="webgl-content">
+    <div id="unityContainer"></div>
+  </div>
+
+  <div class="subtitle">商業施設のコンシェルジュサービス</div>
+  <div class="heading">カンナビ<br><br></div>
+
+  <div id="page_top"><a href="#">⬆︎</a></div>
+</body>
+
+</html>
